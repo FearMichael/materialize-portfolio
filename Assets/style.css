@@ -12,4 +12,17 @@ nav {
 
 .jumbotron-fluid {
     margin-bottom: 0;
+    background-color: rgb(004, 003, 008);
+}
+
+/* Breakpoints for sort order */
+@media (max-width: 992px){ 
+
+.sort-order-1 {
+    order: 1;
+}
+.sort-order-2 {
+    order: 2;
+}
+
 }
