@@ -14,7 +14,7 @@ nav {
     margin-bottom: 0;
     background-color: rgb(004, 003, 008);
 }
-/* How do i get footer to the botom on contact page - position fixed did not work - document is short expand-content is temp fix */
+
 .expand-content {
     min-height: 100vh;
     position: relative;
@@ -22,7 +22,7 @@ nav {
 
 .footer {
     position: absolute;
-    bottom: 0;
+    bottom: -50px;
 }
 /* .contact-footer {
     position: fixed;
