@@ -1,5 +1,15 @@
+  /* main {
+    flex: 1 0 auto;
+  } */
+
 body {
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -10,17 +20,124 @@ nav {
     text-transform: uppercase;
 }
 
-.jumbotron-fluid {
+footer {
+    width: 100%;
+}
+
+/* .carousel img {
+    min-height: 90%;
+
+} */
+
+/* .jumbotron-fluid {
     margin-bottom: 0;
     background-color: rgb(004, 003, 008);
 }
 
 .carousel-caption-shadow {
     text-shadow: 3px 0 5px black;
+} */
+
+/* .parallax-container img {
+    width: 70%;
+    height: 100%; 
+ } */
+
+ .portfolio-img {
+     max-width: 100%;
+     height: auto;
+     padding: 1rem;
+ }
+/* .nomargin {
+    margin: 0rem;
+} */
+
+.nopadding {
+    padding: 0;
 }
 
+.nomargin {
+    margin:0;
+}
+
+.page-footer {
+    margin: 0 auto;
+    padding: .75rem 0;
+    text-align: center;
+}
+div.col.marg {
+    margin: 2rem;
+}
+
+div.row div.col {
+    padding: 0;
+    margin: 0;
+}
+
+.whitebutton-text {
+    color: #64b5f6;
+}
+
+.pl {
+     padding: 2em;
+ }
+
+.ms {
+    margin: 0.5rem 0;
+}
+
+.mst {
+    margin-top: 0.25rem;
+}
+
+ .pst {
+     padding: .25em 0em;
+ }
+ 
 .index-header {
     padding: 0;
     margin: 0;
     width: 100%;
+}
+
+.logoimg {
+    max-height: 80px;
+    margin: 2rem;
+}
+
+.line {
+    height: 0.15rem;
+    width: 80%;
+    background-color: white;
+    margin-top: 2rem;
+}
+
+.sidenav {
+    background-color: #64b5f6;
+    color: white;
+}
+
+.sidenav li a {
+    color:white;
+    font-size: 1.5rem;
+    margin: 0.75rem 0;
+}
+
+@media only screen and (max-width: 500px) {
+    nav .brand-logo {
+        font-size: 1.10rem;
+    }
+    
+}
+
+@media only screen and (max-width: 990px) {
+    div.portfolio-info {
+        text-align: center;
+    }
+
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
 }

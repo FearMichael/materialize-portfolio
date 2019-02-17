@@ -6,48 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Adamina|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- CSS Overrides -->
     <link rel="stylesheet" href="Assets/style.css" type="text/css">
     <title>Michael's Portfolio</title>
   </head>
   <body>
       <!-- Navigation -->
-    <nav class="d-flex justify-content-center bg-light">
-        <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="index.html">Michael Fearnley</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <a class="nav-item nav-link active" href="index.html">About<span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-                    <a class="nav-item nav-link" href="contact.html">Contact</a>
-                </div>
-        </nav>
+    <nav class="nav-wrapper blue lighten-2">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo center">Michael Fearnley</a>
+            <a href="#" data-target="menu-dropdown" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="left hide-on-med-and-down">
+                <li class="active"><a href="index.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
+    <ul class="sidenav" id="menu-dropdown">
+        <li><a href="index.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+   
     <!-- Jumbotron / header image with button -->
-    <div class="jumbotron jumbotron-fluid mb-2">
-        <div class="row text-center align-items-center h-100">
-            <div class="col-lg-6">
+    <div class="black valign-wrapper">
+        <div class="row nopadding nomargin">
+            <div class="col l6 s12">
                 <div>
-                   <img class="w-75 img-fluid" src="Assets/images/Fearnley-Headshot-Small.jpg" alt="Picture of Michael Fearnley"/>
+                   <img class="responsive-img" src="Assets/images/Fearnley-Headshot-Small.jpg" alt="Picture of Michael Fearnley"/>
                 </div>
             </div>
-            <div class="col-lg-6">
-                    <h1 class="display-3 text-white px-1">Kinda Sorta a Developer</h1>
-                    <a class="btn btn-primary btn-lg mt-3" href="contact.html" role="button">Contact!</a>        
+            <div class="col l6 s12 valign-wrapper">
+                <div class="center-align">
+                    <h1 class="white-text">Full Stack Web Developer</h1>
+                    <a class="btn-large blue lighten-2 center-align" href="contact.html">Contact!</a>        
+                    <hr class="line"></hr>
+                    <a href="https://www.linkedin.com/in/michael-fearnley/" target="_blank"><img class="logoimg" src="Assets/images/linkedin-logo.png"></a>
+                    <a href="https://github.com/FearMichael" target="_blank"><img class="logoimg" src="Assets/images/github-logo.png"></a>
+                </div>
             </div>
         </div>
     </div>
     <!-- Hobbies and interests section -->
-    <div class="container-fluid">
-        <div class="row">
+    <div>
+        <div class="nopadding row nomargin ">
             <!-- Hobbies/Interests Column -->
-            <div class="col-lg-6 col-md-12 index-header">
-                    <h2 class="bg-primary index-header text-center p-3">Hobbies & Interests</h2>
-                <div class="container p-3 m-3">
+            <div class="col l6 m12 nomargin nopadding">
+                    <h2 class="blue lighten-2 pst center-align">Hobbies & Interests</h2>
+                <div class="container">
                     <p>I have always been an avid technology enthusiast. Discovering, using, and exploring new technology is always of peak interest. 
                     </p>
                         <ul>
@@ -66,11 +77,13 @@
                         </ul>
                  </div>
             </div>
-            <div class="col-lg-6 col-md-12 index-header">
-                <h2 class="bg-primary index-header text-center p-3">Skills & Attributes</h2>
-                <div class="row">
-                    <div class="col-6">
-                        <div class="container p-3 m-3">
+            <div class="col l6 m12 nomargin nopadding">
+                <div class="blue lighten-2">
+                    <h2 class="blue lighten-2 pst center-align">Skills & Attributes</h2>
+                </div>
+                <div class="row nopadding">
+                    <div class="col l6 s12 nopadding">
+                        <div class="container">
                             <h4>Personal</h4>
                             <ul>
                                 <li>Collaborative</li>
@@ -80,12 +93,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="container p-3 m-3">
+                    <div class="col l6 s12 nopadding">
+                        <div class="container">
                             <h4>Professional</h4>
                             <ul>
                                 <li>HTML & CSS</li>
-                                <li>Bootstrap (in process)</li>
+                                <li>Bootstrap</li>
+                                <li>Materialize</li>
                                 <li>Javascript & React (in process)</li>
                                 <li>SQL (in process)</li>
                             </ul>
@@ -96,13 +110,16 @@
         </div>
     </div>
         <!-- Footer -->
-<footer class="bg-dark p-2 mt-2 footer container-fluid fixed-bottom">
-    <h5 class="text-center text-light">Michael Fearnley &copy;</h5>
+<footer class="page-footer footer-copyright blue lighten-2">
+    <h5 class="center-align nomargin nopadding">Michael Fearnley &copy;</h5>
 </footer> 
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+
   </body>
 </html>
